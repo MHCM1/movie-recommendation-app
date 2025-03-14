@@ -3,6 +3,8 @@ from flask import Flask, render_template, request, redirect, url_for # type: ign
 app = Flask(__name__)
 
 # Initialize dictionary
+# Contains 9 different genres for user to choose from
+# All movies selected based off of the app IMDB
 movies = {
     'Action': [
         {'Title': 'The Dark Knight', 'Year': 2008, 'Director': 'Christopher Nolan', 'Rating': 9.0},
